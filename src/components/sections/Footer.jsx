@@ -145,6 +145,7 @@ export default function Footer() {
             </div>
 
             {/* Layer 4: other locations */}
+            {/* Layer 4: other locations */}
             <div
                 className="relative overflow-hidden bg-[#0a0a0d] bg-contain bg-center bg-no-repeat py-16"
                 style={{ backgroundImage: "url('/assets/footer/bg.png')" }}
@@ -155,16 +156,15 @@ export default function Footer() {
                         {footerData.locationsTitle}
                     </h3>
 
-                    <div className="grid grid-cols-1 place-items-center gap-x-12 gap-y-4 sm:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-x-12 gap-y-8 sm:grid-cols-3">
                         {footerData.locationColumns.map((col, i) => (
-                            <ul key={i} className="space-y-4">
+                            <ul key={i} className="w-full space-y-4">
                                 {col.map((item) => (
                                     <li key={item.label} className="flex items-start gap-2 text-sm">
                                         <MapPin className="mt-0.5 h-4 w-4 shrink-0 fill-violet-600 text-violet-600" />
                                         <a
                                             href="#"
-                                            className={`text-gray-100 hover:text-white ${item.underline ? "underline" : ""
-                                                }`}
+                                            className={`text-gray-100 hover:text-white ${item.underline ? "underline" : ""}`}
                                         >
                                             {item.label}
                                         </a>
@@ -175,6 +175,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 }
