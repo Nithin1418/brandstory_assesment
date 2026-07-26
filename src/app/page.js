@@ -31,7 +31,7 @@ export const metadata = {
   authors: [{ name: brandNameNormal }],
   creator: brandNameNormal,
   publisher: brandNameNormal,
-  metadataBase: new URL("https://brandstory-assesment.vercel.app/"),
+  metadataBase: new URL("https://landing-page-assessment-ivory.vercel.app/"),
   alternates: {
     canonical: "/",
   },
@@ -49,7 +49,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://brandstory-assesment.vercel.app/",
+    url: "https://landing-page-assessment-ivory.vercel.app/",
     siteName: brandNameNormal,
     title: heroData.titleText,
     description: heroData.paraText,
@@ -81,7 +81,7 @@ const servicesSchema = {
   provider: {
     "@type": "LocalBusiness",
     name: brandNameNormal,
-    image: "https://brandstory-assesment.vercel.app/assets/header/logo.png",
+    image: "https://landing-page-assessment-ivory.vercel.app/assets/header/logo.png",
     address: {
       "@type": "PostalAddress",
       streetAddress: footerData.contact.address,
@@ -111,12 +111,12 @@ const servicesSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://brandstory-assesment.vercel.app/#organization",
+  "@id": "https://landing-page-assessment-ivory.vercel.app/#organization",
   name: brandNameNormal,
   description: heroData.paraText,
-  url: "https://brandstory-assesment.vercel.app/",
-  logo: "https://brandstory-assesment.vercel.app/assets/header/logo.png",
-  image: "https://brandstory-assesment.vercel.app/assets/header/logo.png",
+  url: "https://landing-page-assessment-ivory.vercel.app/",
+  logo: "https://landing-page-assessment-ivory.vercel.app/assets/header/logo.png",
+  image: "https://landing-page-assessment-ivory.vercel.app/assets/header/logo.png",
   address: {
     "@type": "PostalAddress",
     streetAddress: footerData.contact.address,
@@ -153,7 +153,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://brandstory-assesment.vercel.app/",
+      item: "https://landing-page-assessment-ivory.vercel.app/",
     },
   ],
 };

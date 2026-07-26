@@ -96,7 +96,7 @@ node trim-brand-logos.mjs
 ## 📂 Folder Structure
 
 ```
-brandstory_assesment/
+landing-page-assessment/
 ├── .next/                         # Compiled Next.js build cache and server distribution files
 ├── node_modules/                  # Project package dependencies
 ├── public/                        # Static public assets served directly
