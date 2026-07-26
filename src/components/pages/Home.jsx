@@ -15,34 +15,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLoading } from "@/context/LoadingContext";
 
 if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 }
 
 export default function Home() {
-  const { loading } = useLoading();
+    const { loading } = useLoading();
 
-  // Refresh ScrollTrigger positions after page loading completes and DOM settles
-  useEffect(() => {
-    if (!loading) {
-      const timer = setTimeout(() => {
-        ScrollTrigger.refresh();
-      }, 100);
-      return () => clearTimeout(timer);
-    }
-  }, [loading]);
+    useEffect(() => {
+        if (!loading) {
+            const timer = setTimeout(() => {
+                ScrollTrigger.refresh();
+            }, 100);
+            return () => clearTimeout(timer);
+        }
+    }, [loading]);
 
-  return (
-    <div>
-      <Hero loading={loading} />
-      <ServicesSection />
-      <DigitalMarketingSection />
-      <WhatSetsUsApartSection />
-      <TrustedPartnerSection />
-      <StatisticsSection />
-      <TeamSection />
-      <FAQSection />
-      <CaseStudiesSection />
-    </div>
-  );
+    return (
+        <div>
+            <Hero loading={loading} />
+            <ServicesSection />
+            <DigitalMarketingSection />
+            <WhatSetsUsApartSection />
+            <TrustedPartnerSection />
+            <StatisticsSection />
+            <TeamSection />
+            <FAQSection />
+            <CaseStudiesSection />
+        </div>
+    );
 }
 

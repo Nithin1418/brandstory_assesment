@@ -4,7 +4,6 @@ import Image from "next/image";
 import brandMarqueeData from "@/data/brandMarquee.json";
 
 function MarqueeRow({ brands, direction = "left", speed = 38 }) {
-    // Duplicate the list so the loop is seamless.
     const items = [...brands, ...brands, ...brands];
 
     return (
