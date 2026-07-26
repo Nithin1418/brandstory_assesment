@@ -3,6 +3,7 @@
 A high-fidelity, responsive Next.js web application built for a premier Digital Marketing Agency in Abu Dhabi. This project demonstrates state-of-the-art frontend development practices, combining modern layout structure, rich aesthetics, complex grid animations, smooth scroll performance, and comprehensive search engine optimization (SEO).
 
 ---
+🔗 **Live Demo**: https://landing-page-assessment-ivory.vercel.app/
 
 ## 🚀 Key Features
 
@@ -96,7 +97,7 @@ node trim-brand-logos.mjs
 ## 📂 Folder Structure
 
 ```
-brandstory_assesment/
+brandstory-assesment/
 ├── .next/                         # Compiled Next.js build cache and server distribution files
 ├── node_modules/                  # Project package dependencies
 ├── public/                        # Static public assets served directly
