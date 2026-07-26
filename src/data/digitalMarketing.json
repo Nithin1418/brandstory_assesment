@@ -1,0 +1,45 @@
+{
+  "title": "We are Digital Marketing Experts in Abu Dhabi",
+  "paragraphs": [
+    "BrandStory has been delivering digital marketing and growth engineering services to clients across Dubai and the UAE since 2014. With an expert team of digital marketers, we power up global brands through search engine optimization, Google Ads and Bing Ads, Social Media, influencer marketing, website design and development services.",
+    "Our expertise spans SEO, PPC, social media marketing, online reputation management, content strategy, email marketing, branding, and website development. Our goal is improving your business visibility, increasing qualified traffic, and converting engagement into real business value. At BrandStory, we skip shortcuts and deeply study Abu Dhabi's industry landscape, audience behavior, and competition to create digital campaigns that resonate locally."
+  ],
+  "floatingImages": [
+    {
+      "src": "/assets/expert/1.png",
+      "alt": "Growth trend chart graphic",
+      "className": "left-2 top-2 w-32 sm:left-4 sm:top-4 sm:w-40",
+      "speed": 0.12
+    },
+    {
+      "src": "/assets/expert/4.png",
+      "alt": "Performance bar chart graphic",
+      "className": "left-0 bottom-24 w-28 sm:left-0 sm:bottom-28 sm:w-32",
+      "speed": 0.2
+    },
+    {
+      "src": "/assets/expert/6.png",
+      "alt": "WhatsApp messaging icon graphic",
+      "className": "left-8 bottom-4 w-16 opacity-20 sm:left-10 sm:bottom-6 sm:w-20",
+      "speed": 0.08
+    },
+    {
+      "src": "/assets/expert/2.png",
+      "alt": "Chat activity graphic",
+      "className": "right-2 top-2 w-28 sm:right-4 sm:top-4 sm:w-32",
+      "speed": 0.14
+    },
+    {
+      "src": "/assets/expert/3.png",
+      "alt": "Instagram icon graphic",
+      "className": "right-6 top-1/2 w-20 -translate-y-1/2 opacity-20 sm:right-8 sm:w-24",
+      "speed": 0.1
+    },
+    {
+      "src": "/assets/expert/5.png",
+      "alt": "Video playlist graphic",
+      "className": "",
+      "speed": 0.24
+    }
+  ]
+}

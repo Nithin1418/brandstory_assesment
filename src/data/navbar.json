@@ -1,0 +1,30 @@
+{
+  "navItems": [
+    {
+      "label": "Digital marketing",
+      "items": ["SEO", "Social Media Marketing", "PPC", "Email Marketing", "Influencer Marketing"]
+    },
+    {
+      "label": "Design",
+      "items": ["Branding", "UI/UX Design", "Logo Design", "Packaging Design"]
+    },
+    {
+      "label": "Content",
+      "items": ["Content Writing", "Copywriting", "Blog Writing", "Video Content"]
+    },
+    {
+      "label": "Production",
+      "items": ["Photography", "Videography", "Animation", "Post Production"]
+    },
+    {
+      "label": "Technology",
+      "items": ["Web Development", "App Development", "E-commerce", "CRM Integration"]
+    },
+    {
+      "label": "Resources",
+      "items": ["Blog", "Case Studies", "Whitepapers", "FAQs"]
+    }
+  ],
+  "ctaText": "GET QUOTE",
+  "ctaLink": "#quote"
+}
