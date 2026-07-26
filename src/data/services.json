@@ -1,0 +1,26 @@
+{
+  "title": "Results-Driven Digital Marketing Services in Abu Dhabi, UAE",
+  "services": [
+    {
+      "icon": "/assets/services/seo.png",
+      "iconWhite": "/assets/services/seo-white.png",
+      "title": "Search Engine Optimization (SEO)",
+      "description": "Search Engine Optimization (SEO) is crucial for enhancing your website's visibility and attracting organic traffic. Our SEO experts in Abu Dhabi implement proven strategies to improve rankings, drive qualified traffic, and secure top positions in search results (SERPs).",
+      "linkText": "Know more"
+    },
+    {
+      "icon": "/assets/services/speaker.png",
+      "iconWhite": "/assets/services/speaker-white.png",
+      "title": "Social Media Marketing (SMM)",
+      "description": "Boost your brand's presence with targeted social media marketing. We design compelling campaigns that capture attention and connect with audiences across Facebook, Instagram, TikTok, LinkedIn, and Twitter in Abu Dhabi.",
+      "linkText": "Know more"
+    },
+    {
+      "icon": "/assets/services/dollar.png",
+      "iconWhite": "/assets/services/dollar-white.png",
+      "title": "Pay Per Click (PPC)",
+      "description": "We deliver performance-focused PPC campaign management tailored for businesses in Abu Dhabi. As a certified Google Partner and Meta Partner agency, we optimize pay-per-click campaigns to ensure maximum reach, high-quality leads, and the best return on investment.",
+      "linkText": "Know more"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "What Sets Us Apart as a Leading Digital Marketing Agency in Abu Dhabi",
+  "items": [
+    {
+      "title": "Human-Driven & AI-Enabled Strategy",
+      "body": "We blend cutting-edge AI for data analysis, trend prediction, and optimization with human creativity, storytelling, and Abu Dhabi cultural insight. This ethical, balanced approach delivers innovative, emotionally resonant campaigns that ensure lasting engagement and strong ROI."
+    },
+    {
+      "title": "Transparency & Collaboration",
+      "body": "We keep you close to the process with clear reporting, open communication, and shared decision-making at every stage, so you always know what's working and why."
+    },
+    {
+      "title": "Tailored, Results-Driven Innovation",
+      "body": "No templated playbooks. Every strategy is built around your specific goals, audience, and market position, then refined continuously against real performance data."
+    },
+    {
+      "title": "Growth Engineering Expertise",
+      "body": "Our team pairs marketing craft with technical depth, building the analytics, automation, and conversion infrastructure that turns campaigns into compounding growth."
+    }
+  ],
+  "floatingImages": [
+    {
+      "src": "/assets/setusaprt/1.png",
+      "alt": "Analytics bar chart graphic",
+      "side": "left",
+      "className": "left-3 top-3 w-24 sm:left-4 sm:top-4 sm:w-28",
+      "speed": 0.12
+    },
+    {
+      "src": "/assets/setusaprt/3.png",
+      "alt": "Growth performance chart graphic",
+      "side": "left",
+      "className": "left-2 top-[58%] w-28 -translate-y-1/2 sm:left-3 sm:w-32",
+      "speed": 0.22
+    },
+    {
+      "src": "/assets/setusaprt/2.png",
+      "alt": "Campaign overview graphic",
+      "side": "right",
+      "className": "right-3 top-3 w-32 sm:right-4 sm:top-4 sm:w-36",
+      "speed": 0.18
+    },
+    {
+      "src": "/assets/setusaprt/4.png",
+      "alt": "Automation and workflow graphic",
+      "side": "right",
+      "className": "right-2 top-[46%] w-32 sm:right-3 sm:w-36",
+      "speed": 0.28
+    },
+    {
+      "src": "/assets/setusaprt/6.png",
+      "alt": "Settings and optimization graphic",
+      "side": "right",
+      "className": "right-4 bottom-4 w-14 opacity-70 sm:right-5 sm:bottom-5 sm:w-16",
+      "speed": 0.1
+    }
+  ]
+}
