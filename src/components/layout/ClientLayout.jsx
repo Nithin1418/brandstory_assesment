@@ -18,7 +18,6 @@ function ClientLayoutContent({ children }) {
   const { loading, setLoading } = useLoading();
 
   useEffect(() => {
-    // Initialize Lenis smooth scroll
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -29,17 +28,14 @@ function ClientLayoutContent({ children }) {
       touchMultiplier: 1.5,
     });
 
-    // Synchronize Lenis with GSAP ScrollTrigger updates
     lenis.on("scroll", ScrollTrigger.update);
 
-    // Bind Lenis raf tick loop to the GSAP ticker
     const tick = (time) => {
       lenis.raf(time * 1000);
     };
     gsap.ticker.add(tick);
     gsap.ticker.lagSmoothing(0);
 
-    // Save Lenis instance to window for global access/debugging
     window.lenis = lenis;
 
     return () => {

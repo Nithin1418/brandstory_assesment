@@ -1,21 +1,37 @@
-// src/app/page.jsx
 import Home from "@/components/pages/Home";
+import heroData from "@/data/hero.json";
+import footerData from "@/data/footer.json";
+import servicesData from "@/data/services.json";
+import statisticsData from "@/data/statistics.json";
+import faqData from "@/data/faq.json";
+
+const experienceStat = statisticsData.stats.find((s) =>
+  s.label.toLowerCase().includes("experience")
+);
+const yearsOfExp = experienceStat
+  ? `${experienceStat.value}${experienceStat.suffix} Years`
+  : "12+ Years";
+
+
+const brandNameNormal = footerData.brandName
+  ? footerData.brandName.charAt(0).toUpperCase() +
+  footerData.brandName.slice(1).toLowerCase()
+  : "Brand Story";
 
 export const metadata = {
-  title: "Digital Marketing Agency In Abu Dhabi | 12+ Years of Expertise",
-  description:
-    "Leading digital marketing agency in Abu Dhabi offering SEO, PPC, and Social Media Marketing (SMM) services. 12+ years of experience helping brands grow with data-driven strategies.",
+  title: `${heroData.titleText} | ${yearsOfExp} of Expertise`,
+  description: heroData.paraText,
   keywords: [
-    "digital marketing agency Abu Dhabi",
-    "SEO agency Abu Dhabi",
-    "PPC agency Abu Dhabi",
-    "social media marketing Abu Dhabi",
-    "marketing agency UAE",
+    heroData.titleText.toLowerCase(),
+    ...servicesData.services.map((s) => s.title.toLowerCase()),
+    ...servicesData.services.map((s) => `${s.title.toLowerCase()} abu dhabi`),
+    "digital marketing agency abu dhabi",
+    "marketing agency uae",
   ],
-  authors: [{ name: "Brand Story" }],
-  creator: "Brand Story",
-  publisher: "Brand Story",
-  metadataBase: new URL("https://www.yourdomain.com"), // replace with real domain
+  authors: [{ name: brandNameNormal }],
+  creator: brandNameNormal,
+  publisher: brandNameNormal,
+  metadataBase: new URL("https://brandstory-assesment.vercel.app/"),
   alternates: {
     canonical: "/",
   },
@@ -33,46 +49,43 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.yourdomain.com",
-    siteName: "Brand Story",
-    title: "Digital Marketing Agency In Abu Dhabi",
-    description:
-      "12+ years of expertise in SEO, PPC, and SMM. Discover why brands trust us as their digital marketing partner in Abu Dhabi.",
+    url: "https://brandstory-assesment.vercel.app/",
+    siteName: brandNameNormal,
+    title: heroData.titleText,
+    description: heroData.paraText,
     images: [
       {
-        url: "/assets/header/og-image.jpg", // add a real 1200x630 image here
+        url: "/assets/header/logo.png",
         width: 1200,
         height: 630,
-        alt: "Brand Story - Digital Marketing Agency In Abu Dhabi",
+        alt: `${brandNameNormal} - ${heroData.titleText}`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Digital Marketing Agency In Abu Dhabi",
-    description:
-      "12+ years of expertise in SEO, PPC, and SMM. Discover why brands trust us as their digital marketing partner in Abu Dhabi.",
-    images: ["/assets/header/og-image.jpg"],
+    title: heroData.titleText,
+    description: heroData.paraText,
+    images: ["/assets/header/logo.png"],
   },
   icons: {
     icon: "/favicon.ico",
   },
 };
 
-// ---- JSON-LD Structured Data (component-driven) ----
 
-// Mirrors ServicesSection.jsx -> services array (SEO, SMM, PPC)
 const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Digital Marketing",
   provider: {
     "@type": "LocalBusiness",
-    name: "Brand Story",
-    image: "https://www.yourdomain.com/assets/header/logo.png",
+    name: brandNameNormal,
+    image: "https://brandstory-assesment.vercel.app/assets/header/logo.png",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Abu Dhabi",
+      streetAddress: footerData.contact.address,
+      addressLocality: "Dubai",
       addressCountry: "AE",
     },
   },
@@ -82,86 +95,56 @@ const servicesSchema = {
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Digital Marketing Services",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Search Engine Optimization (SEO)",
-        },
+    name: servicesData.title,
+    itemListElement: servicesData.services.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service.title,
+        description: service.description,
       },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Social Media Marketing (SMM)",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Pay-Per-Click Advertising (PPC)",
-        },
-      },
-    ],
+    })),
   },
 };
 
-// Mirrors StatisticsSection.jsx -> stats array (350+, 180+, 10+, 600+)
+
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://www.yourdomain.com/#organization",
-  name: "Brand Story",
-  description:
-    "Digital marketing agency in Abu Dhabi with 12+ years of expertise in SEO, PPC, and SMM.",
-  url: "https://www.yourdomain.com",
-  logo: "https://www.yourdomain.com/assets/header/logo.png",
-  image: "https://www.yourdomain.com/assets/header/logo.png",
+  "@id": "https://brandstory-assesment.vercel.app/#organization",
+  name: brandNameNormal,
+  description: heroData.paraText,
+  url: "https://brandstory-assesment.vercel.app/",
+  logo: "https://brandstory-assesment.vercel.app/assets/header/logo.png",
+  image: "https://brandstory-assesment.vercel.app/assets/header/logo.png",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Abu Dhabi",
+    streetAddress: footerData.contact.address,
+    addressLocality: "Dubai",
     addressCountry: "AE",
   },
-  foundingDate: "2013", // derived from "12+ years" — adjust to actual founding year
-  sameAs: [
-    // populate from Footer.jsx -> socials array
-    // "https://www.facebook.com/yourpage",
-    // "https://www.instagram.com/yourpage",
-    // "https://www.linkedin.com/company/yourpage",
-  ],
+  telephone: footerData.contact.phone,
+  email: footerData.contact.email,
+  foundingDate: "2014",
+  sameAs: footerData.socials
+    .map((s) => s.href)
+    .filter((href) => href && href !== "#"),
 };
 
-// Mirrors FaqSection.jsx -> faqs array
-// NOTE: placeholder Q&A shown here — replace mainEntity items with the
-// actual copy from FaqSection.jsx's `faqs` array to keep schema and UI in sync.
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What digital marketing services do you offer in Abu Dhabi?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We offer SEO, PPC (pay-per-click advertising), and social media marketing (SMM) services tailored for businesses in Abu Dhabi.",
-      },
+  mainEntity: faqData.faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
     },
-    {
-      "@type": "Question",
-      name: "How many years of experience does your agency have?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We bring over 12 years of expertise helping brands grow through data-driven digital marketing strategies.",
-      },
-    },
-    // Add remaining Q&A items from faqs array in FaqSection.jsx
-  ],
+  })),
 };
 
-// Mirrors CaseStudiesSection.jsx -> caseStudies array
+// Breadcrumb Schema
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -170,7 +153,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://www.yourdomain.com",
+      item: "https://brandstory-assesment.vercel.app/",
     },
   ],
 };

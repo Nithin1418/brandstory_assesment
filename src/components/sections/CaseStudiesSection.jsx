@@ -15,7 +15,6 @@ export default function CaseStudiesSection() {
     const [prevEl, setPrevEl] = useState(null);
     const [nextEl, setNextEl] = useState(null);
 
-    // Triplicate case studies for continuous loop
     const slideItems = [...caseStudiesData.caseStudies, ...caseStudiesData.caseStudies, ...caseStudiesData.caseStudies];
 
     return (

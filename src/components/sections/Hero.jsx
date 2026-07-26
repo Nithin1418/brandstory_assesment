@@ -14,7 +14,6 @@ export default function Hero({ loading }) {
     const buttonRef = useRef(null);
 
     useEffect(() => {
-        // Set initial state immediately on mount (opacity: 0, positioned below)
         if (titleRef.current) {
             gsap.set(titleRef.current.querySelectorAll(".title-word"), { yPercent: 110, opacity: 0 });
         }
@@ -30,7 +29,6 @@ export default function Hero({ loading }) {
         if (!loading) {
             const tl = gsap.timeline();
 
-            // Animate title words (fade in from bottom to top)
             if (titleRef.current) {
                 tl.to(titleRef.current.querySelectorAll(".title-word"), {
                     yPercent: 0,
@@ -88,7 +86,7 @@ export default function Hero({ loading }) {
                 {/* hero content — exactly 100vh */}
                 <div className="flex h-screen flex-col">
                     <div className="flex flex-1 flex-col items-center justify-center px-6 text-center">
-                        <h1 
+                        <h1
                             ref={titleRef}
                             className="max-w-7xl text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl flex flex-wrap justify-center"
                         >
@@ -101,7 +99,7 @@ export default function Hero({ loading }) {
                                 </span>
                             ))}
                         </h1>
-                        <p 
+                        <p
                             ref={paraRef}
                             className="mt-6 max-w-2xl text-sm text-white/70 md:text-base flex flex-wrap justify-center"
                         >
@@ -131,4 +129,4 @@ export default function Hero({ loading }) {
             </div>
         </section>
     );
-}
+}
