@@ -1,0 +1,27 @@
+{
+  "title": "Trusted by Top Brands Across Industries",
+  "brandsRow1": [
+    { "name": "Adarsh Developers", "slug": "adarsh-developers" },
+    { "name": "Atom Interiors", "slug": "atom" },
+    { "name": "Biogen", "slug": "biogen" },
+    { "name": "Bluedove Bangalore", "slug": "bluedove" },
+    { "name": "Clarks Exotica", "slug": "clarks-exotica" },
+    { "name": "Curtain Label", "slug": "curtain-label" },
+    { "name": "Ferns Estates & Developers", "slug": "ferns" },
+    { "name": "Han Digital", "slug": "han-digital" },
+    { "name": "Hola", "slug": "hola" },
+    { "name": "Indus Intex", "slug": "indus-intex" }
+  ],
+  "brandsRow2": [
+    { "name": "MicroGenesis", "slug": "micro-genesis" },
+    { "name": "Origin", "slug": "origin" },
+    { "name": "Prema Consulting", "slug": "prema" },
+    { "name": "Redseer", "slug": "redseer" },
+    { "name": "Shreemeera", "slug": "shreemeera" },
+    { "name": "Sisa", "slug": "sisa" },
+    { "name": "Smart Links", "slug": "smart-links" },
+    { "name": "TakeLeap", "slug": "take-leap" },
+    { "name": "weSure", "slug": "we-sure" },
+    { "name": "Wintrust Legal", "slug": "wintrust" }
+  ]
+}

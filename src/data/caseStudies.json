@@ -1,0 +1,61 @@
+{
+  "title": "Proven Digital Marketing Success Our Abu Dhabi Case Studies",
+  "caseStudies": [
+    {
+      "id": 1,
+      "badge": "Branding & Digital Marketing",
+      "title": "TravelX",
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&h=1200&fit=crop&auto=format&q=80",
+      "href": "/case-studies/travelx"
+    },
+    {
+      "id": 2,
+      "badge": "Industrial Engineering",
+      "title": "Industrial Dashboard",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&h=1200&fit=crop&auto=format&q=80",
+      "href": "/case-studies/industrial-engineering-dashboard"
+    },
+    {
+      "id": 3,
+      "badge": "Business Consulting",
+      "title": "Strategy Group",
+      "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&h=1200&fit=crop&auto=format&q=80",
+      "href": "/case-studies/business-strategy-consulting"
+    },
+    {
+      "id": 4,
+      "badge": "E-Commerce Growth",
+      "title": "ShopNest",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=1200&fit=crop&auto=format&q=80",
+      "href": "/case-studies/shopnest"
+    },
+    {
+      "id": 5,
+      "badge": "Hospitality & F&B",
+      "title": "Coastline Bistro",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&h=1200&fit=crop&auto=format&q=80",
+      "href": "/case-studies/coastline-bistro"
+    },
+    {
+      "id": 6,
+      "badge": "Healthcare Marketing",
+      "title": "VitalCare Clinics",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=900&h=1200&fit=crop&auto=format&q=80",
+      "href": "/case-studies/vitalcare-clinics"
+    },
+    {
+      "id": 7,
+      "badge": "Real Estate",
+      "title": "Skyline Developers",
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&h=1200&fit=crop&auto=format&q=80",
+      "href": "/case-studies/skyline-developers"
+    },
+    {
+      "id": 8,
+      "badge": "Fintech",
+      "title": "PayWave",
+      "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&h=1200&fit=crop&auto=format&q=80",
+      "href": "/case-studies/paywave"
+    }
+  ]
+}

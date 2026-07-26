@@ -1,0 +1,35 @@
+{
+  "title": "Meet Our Expert Team",
+  "team": [
+    {
+      "id": 1,
+      "name": "Team member 1",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=450&fit=crop&auto=format&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Team member 2",
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=450&fit=crop&auto=format&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Team member 3",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=450&fit=crop&auto=format&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Team member 4",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&h=450&fit=crop&auto=format&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Team member 5",
+      "image": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=600&h=450&fit=crop&auto=format&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Team member 6",
+      "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=450&fit=crop&auto=format&q=80"
+    }
+  ]
+}

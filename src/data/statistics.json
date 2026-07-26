@@ -1,0 +1,9 @@
+{
+  "title": "Our Statistics",
+  "stats": [
+    { "value": 350, "suffix": "+", "label": "Campaigns Executed" },
+    { "value": 180, "suffix": "+", "label": "Satisfied Clients" },
+    { "value": 10, "suffix": "+", "label": "Years of Experience" },
+    { "value": 600, "suffix": "+", "label": "Cups of Coffee" }
+  ]
+}

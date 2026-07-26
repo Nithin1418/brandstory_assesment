@@ -1,0 +1,62 @@
+{
+  "brandName": "BRANDSTORY",
+  "brandDescription": "The BrandStory team has industry expertise and cutting-edge digital capabilities to help clients connect with their audiences in complex environments. We can't wait for you join us on this journey!",
+  "headOffice": "Villa No 1, Westar Les Maisonettas,District 10, Street 5 ,Jumeirah Village Circle, Dubai, United Arab Emirates.",
+  "quickLinks": [
+    "Digital Marketing Agency Abu Dhabi",
+    "Digital Marketing Agency Sharjah",
+    "Digital Marketing Agency in Dubai",
+    "SEO Agency in Dubai",
+    "Digital Marketing Agency Ajman",
+    "PR Agency in Dubai",
+    "B2B Company in Dubai",
+    "Content Writing Company in Dubai"
+  ],
+  "services": [
+    "Digital Marketing Company Dubai",
+    "UI UX Design Services Dubai",
+    "Web Design Company in Dubai",
+    "SEO Company in Dubai",
+    "Social Media Marketing in Dubai",
+    "Mobile App Marketing Services",
+    "Email Marketing Services in Dubai",
+    "PPC Agency in Dubai"
+  ],
+  "contact": {
+    "phone": "+971 52 283 1655",
+    "email": "info@brandstory.ae",
+    "address": "G5, Al Meheri Plaza, opp DBC Building, Al Khabaisi Area, Deira Dubai – 81577, United Arab Emirates"
+  },
+  "socials": [
+    { "label": "Linkedin", "href": "#" },
+    { "label": "Youtube", "href": "#" },
+    { "label": "Facebook", "href": "#" },
+    { "label": "Instagram", "href": "#" },
+    { "label": "Twitter", "href": "#" }
+  ],
+  "copyright": "Copyright © Brandstory, All Rights Reserved 2025",
+  "locationsTitle": "Other Digital Marketing Services Location",
+  "locationColumns": [
+    [
+      { "label": "Digital Marketing Agency in Dubai", "underline": false },
+      { "label": "Digital Marketing Agency in Sharjah", "underline": false },
+      { "label": "Digital Marketing Agency in Abu Dhabi", "underline": false },
+      { "label": "Digital Marketing Agency in Ajman", "underline": false },
+      { "label": "PPC Agency in Dubai", "underline": false }
+    ],
+    [
+      { "label": "Digital Marketing Agency in Al Ain", "underline": true },
+      { "label": "Digital Marketing Agency in Fujairah", "underline": false },
+      { "label": "Digital Marketing Agency in Ras Al Khaimah", "underline": true },
+      { "label": "Digital Marketing Agency in Bahrain", "underline": true },
+      { "label": "SEO Dubai", "underline": false }
+    ],
+    [
+      { "label": "Digital Marketing Agency in Qatar", "underline": true },
+      { "label": "Digital Marketing Agency in Kuwait", "underline": true },
+      { "label": "PR Agency in Dubai", "underline": false },
+      { "label": "Social Media Marketing Agency in Dubai", "underline": true },
+      { "label": "Content Writers in Dubai", "underline": true }
+    ]
+  ]
+}
