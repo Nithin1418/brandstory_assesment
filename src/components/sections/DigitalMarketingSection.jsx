@@ -55,8 +55,6 @@ export default function DigitalMarketingSection() {
             const rect = container.getBoundingClientRect();
             const viewportH = window.innerHeight || 1;
 
-            // progress goes from -0.5 (section below viewport) to 0.5
-            // (section above viewport), 0 when centered in view.
             const progress =
                 (viewportH / 2 - (rect.top + rect.height / 2)) /
                 (viewportH / 2 + rect.height / 2);
@@ -68,7 +66,6 @@ export default function DigitalMarketingSection() {
                 el.style.transform = `translate3d(0, ${offset.toFixed(2)}px, 0)`;
             });
 
-            // Group arrow graphic drifts a bit more since it sits outside the card
             if (groupRef.current) {
                 const offset = progress * 0.18 * 100;
                 groupRef.current.style.transform = `translate3d(0, ${offset.toFixed(2)}px, 0)`;
