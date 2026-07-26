@@ -22,13 +22,12 @@ export default function Navbar({ loading }) {
 
     return (
         <header
-            className={`fixed top-0 z-50 w-full transition-all duration-1000 ease-out ${
-                loading
+            className={`fixed top-0 z-50 w-full transition-all duration-1000 ease-out ${loading
                     ? "opacity-0 -translate-y-full"
                     : "opacity-100 translate-y-0"
-            }`}
+                }`}
         >
-            <nav className="flex items-center justify-between px-6 py-4 md:px-10">
+            <nav className="flex items-center justify-between px-6 py-4 md:px-10 max-w-7xl mx-auto">
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-1 shrink-0">
                     <img
@@ -119,17 +118,15 @@ export default function Navbar({ loading }) {
 
             {/* Mobile Sidebar Menu Backdrop Overlay */}
             <div
-                className={`fixed inset-0 z-50 bg-black/60 backdrop-blur-md transition-opacity duration-500 lg:hidden ${
-                    isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-                }`}
+                className={`fixed inset-0 z-50 bg-black/60 backdrop-blur-md transition-opacity duration-500 lg:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                    }`}
                 onClick={() => setIsMobileMenuOpen(false)}
             />
 
             {/* Mobile Sidebar Menu Drawer */}
             <div
-                className={`fixed top-0 right-0 z-50 h-screen w-screen bg-[#0d0a17]/98 p-6 flex flex-col backdrop-blur-xl shadow-2xl transition-transform duration-500 ease-out lg:hidden ${
-                    isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-                }`}
+                className={`fixed top-0 right-0 z-50 h-screen w-screen bg-[#0d0a17]/98 p-6 flex flex-col backdrop-blur-xl shadow-2xl transition-transform duration-500 ease-out lg:hidden ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+                    }`}
             >
                 {/* Drawer Header */}
                 <div className="flex items-center justify-between pb-6 border-b border-white/10">
@@ -173,9 +170,8 @@ export default function Navbar({ loading }) {
                                         height="16"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        className={`transition-transform duration-200 text-white/50 ${
-                                            isOpen ? "rotate-180" : ""
-                                        }`}
+                                        className={`transition-transform duration-200 text-white/50 ${isOpen ? "rotate-180" : ""
+                                            }`}
                                     >
                                         <path
                                             d="M6 9L12 15L18 9"
@@ -186,12 +182,11 @@ export default function Navbar({ loading }) {
                                         />
                                     </svg>
                                 </button>
-                                
+
                                 {/* Collapsible Submenu */}
                                 <div
-                                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                                        isOpen ? "max-h-[300px] mt-2 opacity-100" : "max-h-0 opacity-0"
-                                    }`}
+                                    className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-[300px] mt-2 opacity-100" : "max-h-0 opacity-0"
+                                        }`}
                                 >
                                     <ul className="pl-4 space-y-2 border-l border-white/10 mb-2">
                                         {item.items.map((sub) => (
